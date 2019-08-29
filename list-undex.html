@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Список дел</title>
+    <link href='./style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <ul class='todo-list'>
+      <li class='todo-list-item'>
+        <label>
+          <input class='todo-list-input' type='checkbox'>
+          <span>Task one</span>
+        </label>
+      </li>   
+    </ul>
+    <p class='empty-tasks hidden'>You did it!</p>
+    <form class='add-form'  method='post'>
+      <input class='add-form-input' type='text'  aria-label='Описание задачи' placeholder='Add task' required>
+      <button class='add-form-button' type='submit'>Add task</button>
+    </form>
+
+    <template id='task-template'>
+      <li class='todo-list-item'>
+        <label>
+          <input type='checkbox' class='todo-list-input'>
+          <span></span>
+        </label>
+      </li>
+    </template>
+    <script src='./script.js'></script>
+  </body>
+</html>
